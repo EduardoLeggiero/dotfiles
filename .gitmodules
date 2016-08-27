@@ -1,0 +1,7 @@
+[submodule "dotbot"]
+	path = .dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
+[submodule "bash_it"]
+	path = bash_it
+	url = https://github.com/Bash-it/bash-it

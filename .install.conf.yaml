@@ -1,0 +1,25 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    ~/.bash_profile: bash_profile
+    ~/.bash_it: bash_it
+    ~/.bash_it/custom/themes: bash_it_custom/themes
+    ~/.bashrc: bashrc
+    ~/.dotfiles: ''
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
+
+- shell:
+  -
+    command: bash .install.sh
+    stdin: true
+    stdout: true
+    stderr: true

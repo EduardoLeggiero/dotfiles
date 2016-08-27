@@ -1,0 +1,15 @@
+[alias]
+    update-submodules = submodule update --init --recursive
+    upgrade-submodules = git submodule update --init --remote
+
+[color]
+	  ui = auto
+
+[push]
+	  default = upstream
+
+[core]
+  	excludesfile = ~/.gitignore_global
+
+[include]
+    path = ~/.gitconfig_local
